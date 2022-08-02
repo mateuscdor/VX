@@ -1,0 +1,76 @@
+{
+    "LANGUAGE": "English",
+    "LANGCODE": "en",
+    "AUTHOR"  : "Mr.Joka",
+    "STRINGS" : { 
+                  "aqua" : {   
+                            "COMMAND"  : "Command",
+                            "DESC"     : "Description",
+                            "EXAMPLE"  : "Example",
+                            "NOT_FOUND": "*I couldnt find a command like this*",
+                            "WARN"     : "Warn"
+                           },
+                  "yt" :   {
+                            "N_SONG"   : "*Please Enter a song!*\n*Example:* ```.song Stay with Justin Bieber ```" ,
+                            "NOT_SONG" : "```I couldn't find your Song 🥲```" ,
+                            "S_YT"     : "*🔍 SEARCHING ON YOUTUBE...*" ,
+                            "N_YT"     : "❌ ```ENTER A TOPIC* \nex : .getyt Whatsapp```" ,
+                            "N_VID"    : "❌ ```ENTER A YOUTUBE VIDEO LINK*\nex : .video https://youtu.be/pyCIKli4YUA" ,
+                            "NOT_VID"  : "```I couldn't find your Video 🥲```"
+                          } ,
+                "admin" : {  
+                             "UR_NOT_ADMIN": "*You are not admin in this group!*",
+                             "IM_NOT_ADMIN": "*I am not admin in this group!*",
+                             "BANNED": "kicked out of the group!",
+                             "GIVE_ME_USER": "*Give me a user!*" ,
+                             "USER_IS_ADMIN" : "*Can not kick group Admins!*" ,
+                             "ADDED"         : "added to the group!!" ,
+                             "E_USER"        : "❌ ```Enter the number to be added to the group with the country code without + mark and space.```"
+    
+                           } ,
+                "updater": {
+                              "UPDATER_DESC": "Checks the update for Lusifar.",
+                              "UPDATE": "*YOUR BOT IS COMPLETELY UP-TO-DATE*",
+                              "NEW_UPDATE": "*New update available for 👸 𝚀𝚄𝙴𝙴𝙽 𝙳𝙸𝙰𝙽𝙰𝙱👸*\n\n type  *.update now* to update 𝚀𝚄𝙴𝙴𝙽 𝙳𝙸𝙰𝙽𝙰 ``` \n\n Updates are:\n\n",
+                              "UPDATE_NOW_DESC": "It makes updates.",
+                              "UPDATING": "updating...",
+                              "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
+                              "UPDATED": "*✅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴜᴘᴅᴀᴛᴇᴅ!*",
+                              "UPDATED_LOCAL": "*✅ Successfully Updated!*",
+                              "AFTER_UPDATE": "*💬 𝚀𝚄𝙴𝙴𝙽 𝙳𝙸𝙰𝙽𝙰 ʀᴇꜱᴛᴀʀᴛɪɴɢ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ!*",
+                              "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
+                             },
+        "_plugin": {
+            "INSTALL_DESC": "Install external plugins.",
+            "NEED_URL": "Please enter a URL! Example:",
+            "UNOFF": "⚠️ *Attention!* \n*The plugin you have installed is not official!*",
+            "INVALID_URL": "```Please enter a valid url!```",
+            "INVALID_PLUGIN": "*❌ Your plugin is invalid!*\n*Error:*",
+            "INSTALLED": "*✅ Plugin has been successfully installed!*",
+            "PLUGIN_DESC": "Shows the plugins you have installed.",
+            "INSTALLED_FROM_REMOTE": "*Plugins you install externally:*\n",
+            "NO_PLUGIN": "*You have not installed any external plugins!*",
+            "REMOVE_DESC": "Removes the plugin.",
+            "NEED_PLUGIN": "```Please enter a Plugin! Example: .plugin __test```",
+            "NOT_FOUND_PLUGIN": "```Maybe you have installed such a plugin, or maybe not. But it sure isn't right now.```",
+            "DELETED": "*✅ Module successfully deleted!*",
+            "WARN": "Get plugins only from t.me/remasterplugin channel."
+        },
+ 
+                
+                   "stic" : {
+                              "NEED"   : "❌ ``` please mention an image or video```" ,
+                              "C_STIC" : "```🧰creating sticker...```" ,
+                              "N_STIC" : "❌ ``` Please mention a sticker.```" ,
+                              "C_IMG"  : "```🧰converting sticker to image...```" ,
+                              "C_VID"  : "```🧰converting animated sticker to video...```" 
+                           }
+
+
+
+                 }
+
+
+
+
+}
