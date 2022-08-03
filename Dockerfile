@@ -5,4 +5,4 @@ ENV TZ=Asia/Colombo
 RUN npm install supervisor -g
 RUN yarn install --no-audit
 
-CMD ["node", "plugins", "main.js"]
+CMD ["node", "main.js"]
