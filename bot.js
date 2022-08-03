@@ -113,7 +113,11 @@ Array.prototype.remove = function() {
     return this;
 };
 
-
+fs.readdirSync('./plugins').forEach(plugin => {
+            if(path.extname(plugin).toLowerCase() == '.js') {
+                require('./plugins/' + plugin);
+            }
+        });
 const readPlugins = (name) => {
   console.log("🤖Installing plugins...");
   fs.readdirSync("./" + name).forEach((plugin) => {
