@@ -1,6 +1,6 @@
 
 
-const Axzi = require("../events");
+const Axzi = require("../Axzi");
 const GM = "it sends good morning message";
 const GN = "it sends Night message";
 
