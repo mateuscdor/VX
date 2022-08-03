@@ -20,25 +20,9 @@ const { PassThrough } = require('stream');
 const heroku = new Heroku({ token: Config.HEROKU.API_KEY })
 const axios = require('axios');
 var sleep = require('system-sleep');
-
-
-//const b64utf8 = require('./activity');
-
-//=====================================================================================================
-
-
-
-
-
-
-
-
-
 var bdianases = config.SESSION
 console.log(`MY SESSION : ${bdianases}`)
  var REPSESSION = '';  try {if (bdianases.includes('DIANA;;;')) { var lastsesdia = bdianases.replace('DIANA;;;','') ; REPSESSION = lastsesdia }} catch{console.log('error')}
-
-
  const base64 = REPSESSION ;
 const tey = Buffer.from(base64, 'base64');
 const oridiases = tey.toString('utf-8');
@@ -60,23 +44,6 @@ sleep(5000);
 
 
 console.log(`GETTING SESSION`)
-
-
-
-
-
-
-
-
-
-
-
-//=========================================================================================================
-
-
-
-
-
 const { state, saveState } = useSingleFileAuthState('./session.json')
 const { song ,  asong ,  dsong , getyt , video , yt720p , yt480p , yt360p}  = require('./plugins/youtube');
 const { kick , add } = require('./plugins/admin')
@@ -92,36 +59,19 @@ const Lang = Language.getString('updater');
 const { mediafireDl } = require('./lib/mediafire.js')
 const { aiovideodl } = require('./lib/fbdl.js')
 const ytinfo = require('./lib/ytinfo');
-//================================
 const path = require("path");
-
 const chalk = require('chalk');
-
-
-
 const {Message, StringSession, Image, Video} = require('./DIANA/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
-
-
 const got = require('got');
-
-//=====================================
-
 const { XeonBotIncTiktok } = require('./lib/tiktokbyxeon');
-
-
 const { savefrom} = require("@bochilteam/scraper")
-
 let bocil = require('@bochilteam/scraper')  
 const emoji = require('./plugins/emojitest.js')
-
 const prefix = '.'
-const ownerNumber = ['94769370897']
+const ownerNumber = ['94766598862']
 const cantfind = "*can't find anything*"
-
-
-//sql
 const DIANADB = config.DATABASE.define('DIANA', {
     info: {
       type: DataTypes.STRING,
@@ -142,7 +92,6 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
 const plugindb = require('./plugins/sql/plugin');
 
 
-// Yalnızca bir kolaylık. https://stackoverflow.com/questions/4974238/javascript-equivalent-of-pythons-format-function //
 String.prototype.format = function () {
     var i = 0, args = arguments;
     return this.replace(/{}/g, function () {
@@ -165,13 +114,19 @@ Array.prototype.remove = function() {
 };
 
 
+const readPlugins = (name) => {
+  console.log("🤖Installing plugins...");
+  fs.readdirSync("./" + name).forEach((plugin) => {
+    if (path.extname(plugin).toLowerCase() == ".js") {
+      require("./" + name + "/" + plugin);
+    }
+  });
+};
 
 
 
-
-
-
-
+//██████████████████████████████████
+//requirements End ©Axzi
 
 const connectToWA = () => {
 	const conn = makeWASocket({
