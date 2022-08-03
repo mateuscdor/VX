@@ -1,10 +1,8 @@
-
-FROM aquabotwa/sanuwa-official:beta 
-
-RUN git clone https://github.com/ennabamata/alisamagemanalisage /root/queendiana
-WORKDIR /root/queendiana/
+FROM node:latest
+RUN git clone https://github.com/methu45/VX /root/queendianamd
+WORKDIR /root/queendianamd
 ENV TZ=Asia/Colombo
-RUN yarn add supervisor -g
+RUN npm install supervisor -g
 RUN yarn install --no-audit
 
-CMD ["node", "bot.js"]
+CMD ["node", "main.js"]
