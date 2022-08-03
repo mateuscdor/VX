@@ -135,6 +135,8 @@ const connectToWA = () => {
 		browser: ['QUEEN DIANA MD', 'SAFARI', 'v5'],
 		auth: state,
 	})
+
+  readPlugins("plugins");
 	
 	conn.ev.on('connection.update', async(update) => {
 		const { connection, lastDisconnect } = update
